@@ -12,4 +12,6 @@
         <item name="android:paddingTop">@dimen/badge_height_padding</item>
         <item name="android:visibility">gone</item>
     </style>
+
+
 </resources>

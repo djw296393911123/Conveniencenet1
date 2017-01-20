@@ -1,6 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+
+    <color name="colorPrimary">#ff4466</color>
+    <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="bnb_defalte_color">#aaa</color>
+    <!--我的 -->
+    <color name="mine_line_color">#e2e2e2</color>
+    <color name="mine_bg">#f6f6f6</color>
+    <color name="mine_text_color">#474747</color>
+    <color name="mine_name_color">#fff</color>
+    <color name="mine_gerenshezhi_color">#ffdae0</color>
+    <color name="mine_head_color">#ffb4c2</color>
+    <color name="head_bottom_bg">#7b7b7b</color>
+    <color name="mine_gerenshezhi">#FFB4C2</color>
+
+
+    <!-- 首页 -->
+
+    <color name="index_third_righttext">#ff4466</color>
+    <color name="index_third_lind">#e2e2e2</color>
+    <color name="index_fourth_call">#178df5</color>
+    <color name="index_fourth_attention">#f87308</color>
+    <color name="index_fourth_can">#ff4466</color>
+    <color name="index_fourth_canout">#d2d2d2</color>
+    <color name="index_search">#99ffffff</color>
+
+
+    <!-- 字体颜色 -->
+    <color name="textcolor_dark">#242424</color>
+    <color name="textcolor_mid">#666666</color>
+    <color name="textcolor_search">#898989</color>
+    <color name="textcolor_tint">#a4a4a4</color>
+    <color name="textcolor_tintest">#d2d2d2</color>
+    <color name="textcolor_gold">#ffcd05</color>
+    <color name="textcolor_pink">#ff4466</color>
+    <color name="textcolor_blue">#5270b0</color>
+    <color name="edittext_hint">#D5D5D5</color>
+
+    <!-- 背景颜色 -->
+    <color name="bgcolor">#f6f6f6</color>
+    <color name="bgalpha">#90000000</color>
+    <color name="showimg_head">#50000000</color>
+    <color name="bgalpha_white">#90ffffff</color>
+
+    <!-- 分隔线 -->
+    <color name="simpleline">#f6f6f6</color>
+    <color name="simple_line">#e2e2e2</color>
+
+    <!-- simple colors-->
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- 绑定手机号 -->
+    <color name="text_huoquyanzhengma">#ff4466</color>
+
+    <!-- dialog -->
+    <color name="dialog_title_bg">#7f000000</color>
+    <color name="dialog3_phone">#07d7fd</color>
+    <color name="dialog3_hand">#fe6001</color>
+
+    <!-- 登录 -->
+    <color name="login_denglu">#767676</color>
 </resources>
