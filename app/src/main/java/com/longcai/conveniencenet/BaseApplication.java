@@ -16,8 +16,6 @@ public class BaseApplication extends Application {
     //应用名称
     public static final String APP_NAME = "ConvenienceNet";
 
-
-
     @Override
     public void onCreate() {
         super.onCreate();

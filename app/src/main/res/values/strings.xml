@@ -7,5 +7,8 @@
     <string name="bnb_name_guanzhu">关注</string>
     <string name="bnb_name_wode">我的</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>

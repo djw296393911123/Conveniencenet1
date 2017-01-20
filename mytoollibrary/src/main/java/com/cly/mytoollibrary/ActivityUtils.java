@@ -1,6 +1,11 @@
 package com.cly.mytoollibrary;
 
 
+import android.app.Activity;
+import android.content.Context;
+import android.view.inputmethod.InputMethodManager;
+
+import static android.content.Context.INPUT_METHOD_SERVICE;
 
 /**
  * Created by 丛龙宇 on 17-1-20.
@@ -50,6 +55,7 @@ public class ActivityUtils {
 
     /**
      * 展示v4 Fragment
+     *
      * @param fragmentManager
      * @param t
      * @param resId
@@ -78,11 +84,25 @@ public class ActivityUtils {
 
     /**
      * 展示v4 Fragment
+     *
      * @param fragmentManager
      * @param t
      * @param <T>
      */
     public static <T extends android.support.v4.app.Fragment> void addFragmentToActivity(android.support.v4.app.FragmentManager fragmentManager, T t) {
         addFragmentToActivity(fragmentManager, t, -1);
+    }
+
+    /**
+     * 关闭软键盘
+     * @param activity
+     */
+    public static void closeKeyBoard(Activity activity) {
+        if (activity.getCurrentFocus() != null) {
+            ((InputMethodManager) activity.getSystemService(INPUT_METHOD_SERVICE))
+                    .hideSoftInputFromWindow(activity.getCurrentFocus()
+                                    .getWindowToken(),
+                            InputMethodManager.HIDE_NOT_ALWAYS);
+        }
     }
 }

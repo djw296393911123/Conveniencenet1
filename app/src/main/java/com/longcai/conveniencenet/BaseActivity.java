@@ -1,5 +1,6 @@
 package com.longcai.conveniencenet;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -10,6 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.cly.mytoollibrary.ActivityUtils;
 
 /**
  * Created by 丛龙宇 on 17-1-20.
@@ -31,7 +34,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
     @Override
     public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
-        $Log("--> onCreate");
+        $Log(TAG + "--> onCreate");
 
 
         try {
@@ -62,10 +65,29 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
 
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        $Log(TAG + "--> onPause");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        ActivityUtils.closeKeyBoard(this);
+        $Log(TAG + "--> onStop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        $Log(TAG + "--> onDestory");
+    }
+
     /* [初始化Bundle参数]
-            *
-            * @param parms
-    */
+                *
+                * @param parms
+        */
     public abstract void initParms(Bundle parms);
 
     /**
@@ -90,9 +112,10 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
      */
     public abstract void doBusiness(Context mContext);
 
-    /** View点击 **/
+    /**
+     * View点击
+     **/
     public abstract void widgetClick(View v);
-
 
 
     /**
