@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Conveniencenet</string>
+    <string name="app_name">乐享全城</string>
+
+    <string name="bnb_name_shouye">首页</string>
+    <string name="bnb_name_youhuiquan">优惠券</string>
+    <string name="bnb_name_shangjiahuodong">商家动态</string>
+    <string name="bnb_name_guanzhu">关注</string>
+    <string name="bnb_name_wode">我的</string>
+
+
 </resources>

@@ -11,6 +11,13 @@ import com.zcx.helper.app.AppInit;
 
 public class BaseApplication extends Application {
 
+    //是否开启调试模式
+    public static final boolean isDebug = false;
+    //应用名称
+    public static final String APP_NAME = "ConvenienceNet";
+
+
+
     @Override
     public void onCreate() {
         super.onCreate();
